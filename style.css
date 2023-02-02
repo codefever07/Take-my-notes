@@ -1,0 +1,302 @@
+
+/* reset-css */
+*{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(123, 174, 223);
+}
+
+/* main-container */
+
+.container{
+    box-sizing: border-box;
+   text-align: center;
+ 
+}
+
+/* search-bar and filter-button */
+
+.upper-section{
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 35px;
+}
+
+#app-title{
+    display: inline-block;
+    width: 100vw;
+    text-align: left;
+  font-size: 2.3rem
+}
+.searchbar input{
+    height: 2.2rem;
+    width: 8.2rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-left: 6px;
+    font-size: 1.2rem;
+}
+
+.search-btn{
+    margin-top: 5px;
+margin-left: 7px;
+}
+
+.search-btn button{
+    width: 7.2rem;
+    height: 1.8rem;
+    background-color: blue;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.2rem;
+    border:2px solid black;
+}
+
+.search-btn:hover button{
+    background-color:rgba(0, 0, 255, 0.18);
+}
+
+
+/* titel and text-bar */
+#my_notes-title-text{
+    text-align: left;
+    font-size: 2.3rem
+}
+
+.mid-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px
+}
+
+.title_or_field{
+    height: 15rem;
+    width: 45rem
+}
+
+#text-content{
+    width: 45rem;
+    height: 15rem;
+    font-size: 1.9rem;
+    border: 2px solid black;
+    margin-top: 12px;
+    padding: 12px
+}
+
+.add_div{
+    text-align: left;
+}
+
+/* lower-section */
+
+.lower-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    overflow: none;
+    height: 20rem;
+    width: 100vw;
+    box-sizing: content-box;
+    align-content: center;
+    align-items: center;
+    margin-top: 120px
+}
+
+
+.save-notes-title{
+    /* width: 45rem; */
+    height: 2.5rem;
+    text-align: left;
+    font-size: 1.9rem;
+    border: 2px solid tomato;
+    display: inline-block;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 10px
+}
+
+.save-notes-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    width: 45rem;
+    min-height: 15rem;
+    /* border:2px solid red; */
+    box-sizing: border-box;
+    grid-row-gap: 25px;
+    grid-column-gap: 35px;
+    padding: 20px;
+    /* justify-content: center */
+}
+
+.saved-notes{
+/* background-color: blue; */
+width: 156px;
+box-sizing: border-box;
+/* max-height:20px ; */
+text-align: center;
+
+}
+
+.notes-content{
+    text-align: center;
+    /* box-sizing: border-box; */
+    /* height:200px; */
+    border: 2px solid black;
+    padding: 10px
+}
+
+.notes-title{
+    font-size: 1.3rem
+}
+
+.notes-para{
+    text-align: left;
+    justify-content: left;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    overflow: auto;
+    
+}
+
+.currentTitle{
+    display: inline
+}
+
+#set-title-btn{
+    margin-left: 20px;
+    width: 7.2rem;
+    height: 1.8rem;
+    background-color: blue;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.2rem;
+    border:2px solid black;
+}
+
+#set-title-btn:hover{
+    background-color:rgba(0, 0, 255, 0.18);
+}
+
+#add-btn{
+    margin-left: 20px;
+    width: 7.2rem;
+    height: 3.8rem;
+    background-color: blue;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.2rem;
+    border:2px solid black;
+    margin-top: 20px
+}
+
+#add-btn:hover{
+    background-color:rgba(0, 0, 255, 0.18);
+}
+
+/* =============================================================================================================== */
+
+/* mediaqueries */
+
+@media(max-width:450px){
+    *{
+        /* background: green; */
+        font-size: 1.3rem
+    }
+    #app-title{
+      font-size: 0.98rem;
+      margin-left: 10px
+    }
+    .searchbar input{
+        margin-right: -186pxpx
+    }
+    .search-btn button {
+        height: 27px;
+        width: 50px;font-size: 0.8rem
+      }
+
+    #my_notes-title-text {
+        text-align: left;
+        font-size: 1.3rem;
+        margin-left: 10px
+      }
+    #text-content{
+        width:360px;
+        font-size: 1.2rem;
+       
+    }
+    .title_or_field{
+        box-sizing: content-box;
+        padding: 20px;
+        display: inline-block
+
+    }
+
+  .lower-section{
+      margin-top:160px
+  }
+  .save-notes-title{
+      font-size: 1.2rem;
+      height: 1.2rem
+  }
+  .save-notes-container{
+      display: flex;
+      flex-direction: column;
+      width: 16.2rem
+  }
+  .notes-content{
+      width: 13rem
+  }
+
+  #set-title-btn{
+      height: 1.2rem;
+      width:2.8rem;
+      font-size: 0.6rem
+  }
+  #add-btn{
+    height: 25px;
+    width: 145px;
+    font-size: 0.8rem
+}
+
+#searchText{
+    font-size: 0.6rem
+}
+
+}
+
+
+@media(max-width:360px){
+#app-title{
+    font-size: 0.9rem
+}
+.searchbar input{
+    height: 25px;
+    width: 90px;
+    margin-top: 9.2px;
+}
+#filterButton{
+    height: 25px;
+    width: 90px
+}
+#text-content{
+    width: 300px;
+    font-size: 0.98rem
+}
+#my_notes-title-text{
+    font-size: 0.98rem;
+    margin-top: 30px
+}
+#add-btn{
+    height: 25px;
+    width: 145px;
+    font-size: 0.789rem
+}
+#searchText{
+    font-size: 0.6rem
+}
+
+}
